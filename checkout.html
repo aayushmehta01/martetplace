@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>365FOREVER | Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
+
+    <link rel="stylesheet" href="payment.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+    .checkout-header-left-section a{
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: black;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  </style>
+
+  <body>
+    <div class="checkout-header">
+      <div class="header-content">
+        <div class="checkout-header-left-section">
+          <a href="front.html">
+            <!-- <img class="amazon-logo" src="images/amazon-logo.png">
+            <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png"> -->
+            365FOREVER
+          </a>
+        </div>
+
+        <div class="checkout-header-middle-section ">
+          Checkout (<a class="return-to-home-link"
+            href="index.html"><span class="js-cart-quantity"></span></a>)
+        </div>
+
+        <div class="checkout-header-right-section">
+          <img src="images/icons/checkout-lock-icon.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="main front">
+      <div class="page-title js-page-title">Review your order</div>
+
+      <div class="checkout-grid">
+        <div class="order-summary js-order-summary"> 
+           <!-- Order summary will be populated dynamically by JS -->
+        </div>
+
+        <div class="payment-summary js-payment-summary">
+          <!-- Payment summary will be populated dynamically by JS -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="container" style="position: fixed; top: 270px; left: 540px;">
+      <div class="popup behind" id="popup">
+        <img src="images/404-tick.png" alt="">
+        <h2>Thank You!</h2>
+        <p>
+          Your order has been placed successfully
+        </p>
+        <button onclick="closePopup()">OK</button>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <form action="" class=" js-payment-form">
+        <!-- display-none -->
+
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" required >
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>zipcode :</span>
+                        <input type="text" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row" style="display: flex; justify-content: space-between;">
+                  <h3 class="title">payment</h3>
+                  <button class="cross" style="display: flex; justify-content: center; align-items: center; background-color: white; font-size: 20px; font-weight: 700;" >X</button>
+                </div>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="images/pay/pay.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" value="xxxx-xxxx-xxxx-" required>
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="number" placeholder="xx" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="xxxx" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="number" placeholder="xxx" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn" onclick="sendMessage()">
+    </form>
+    </div>
+
+
+  </body>
+
+  <script type="module" src="scripts/checkout.js"></script>
+</html>

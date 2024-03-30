@@ -1,0 +1,102 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.footer-icon{
+    width: 20px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .install .row img{
+    border: 1px solid  #088178;
+    border-radius: 6px;
+    cursor: pointer;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    footer {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+      /* align-items: center; Center items on smaller screens */
+    }
+  
+    footer .col {
+      margin-bottom: 15px; /* Reduced margin between columns on smaller screens */
+    }
+  
+    .footer-icon {
+      width: 16px; /* Reduced icon size for smaller screens */
+      padding-right: 2px; /* Adjusted padding for smaller screens */
+      margin-left: 10px;
+    }
+  
+    footer .logo {
+      margin-bottom: 20px; /* Reduced margin for smaller screens */
+    }
+  
+    footer{
+      font-size: 12px; /* Reduced font size for smaller screens */
+      padding-bottom: 15px; /* Reduced padding for smaller screens */
+    }
+
+    footer .follow{
+        font-size: 12px; /* Reduced font size for smaller screens */
+        padding-bottom: 15px; /* Reduced padding for smaller screens */
+        margin-left: -10px;
+      }
+  
+    footer p,
+    footer a {
+      font-size: 12px; /* Reduced font size for smaller screens */
+      margin-bottom: 5px; /* Reduced margin for smaller screens */
+    }
+  
+    footer .install img {
+      margin: 5px 0 10px 0; /* Adjusted margin for smaller screens */
+    }
+  
+    footer .copyright {
+      font-size: 11px; /* Reduced font size for smaller screens */
+    }
+  }
+  

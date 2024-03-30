@@ -1,0 +1,125 @@
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .15s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  }
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  position: fixed;
+  top: 70px;
+  left: 450px;
+}
+
+.display-none{
+  display: none;
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #088178;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .container form .row .col {
+      flex: 1 1 48%; /* Two columns on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .container form .row .col {
+      flex: 1 1 48%; /* Two columns on large screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container form {
+    position: fixed; /* Keep form fixed on mobile screens */
+    top: 70px; /* Adjusted top position for mobile screens */
+    left: 0; /* Ensure form starts from the left edge */
+    width: 100%; /* Adjust width to fit the viewport */
+    max-width: 100%; /* Ensure form does not exceed viewport width */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds viewport height */
+    height: calc(100vh - 70px); /* Set height to fill the viewport */
+    padding: 20px; /* Adjust padding for scrollable content */
+  }
+
+  .container form .row .col {
+    flex: 1 1 100%; /* Full width for columns on mobile screens */
+  }
+}

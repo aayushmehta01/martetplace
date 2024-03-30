@@ -1,0 +1,174 @@
+#hero{
+    background-image: url("../../images/hero4.png");
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  #hero h4{
+    padding-bottom: 15px;
+  }
+  #hero h1{
+    color: #088178;
+  }
+  #hero button{
+    border: 1px solid black;
+    color: #088178;
+    background-color: transparent;
+    /* border: 0; */
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.15s;
+  }
+
+  #hero button:hover{
+    background-color: #088178;
+    color: white;
+    border: 1px solid #088178;
+  }
+
+  h1{
+      font-size: 50px;
+      line-height: 64px;
+      color: #222;
+      margin: 0;
+      padding: 0;
+  }
+  h2{
+      font-size: 46px;
+      line-height: 54px;
+      color: #222;
+      margin: 0;
+      padding: 0;
+  }
+  h4{
+      font-size: 20px;
+      color: #222;
+      margin: 0;
+      padding: 0;
+  }
+  h6 {
+      font-weight: 700;
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+  }
+  p{
+      font-size: 16px;
+      color: #465b52;
+      margin: 15px 0 20px 0;
+
+  }
+  .section-p1{
+      padding: 40px 80px;
+  }
+  .section-m1{
+      margin: 40px 0;
+  }
+  button.normal{
+      font-size: 14px;
+      font-weight: 600;
+      padding: 15px 30px;
+      color: #000;
+      background-color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.2s;
+  }
+  button.white{
+      font-size: 13px;
+      font-weight: 600;
+      padding: 11px 18px;
+      color: #fff;
+      background-color: transparent;
+      border: 1px solid #fff;
+      cursor: pointer;
+      outline: none;
+      transition: 0.2s;
+  }
+
+  .featured{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+  }
+
+  .featured h3{
+    font-weight: 300
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    #hero {
+      padding: 0 20px; /* Adjusted padding for smaller screens */
+      align-items: center; /* Center items on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    #hero h1 {
+      font-size: 36px; /* Reduced font size for smaller screens */
+      line-height: 44px; /* Adjusted line height for smaller screens */
+    }
+  
+    #hero button {
+      padding: 12px 40px; /* Adjusted padding for smaller screens */
+      font-size: 14px; /* Reduced font size for smaller screens */
+    }
+  
+    h1,
+    h2,
+    h4 {
+      font-size: 24px; /* Reduced font size for smaller screens */
+      line-height: 32px; /* Adjusted line height for smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    p {
+      font-size: 14px; /* Reduced font size for smaller screens */
+      margin: 10px 0 15px 0; /* Adjusted margins for smaller screens */
+    }
+  
+    .section-p1 {
+      padding: 20px 40px; /* Adjusted padding for smaller screens */
+    }
+  
+    .section-m1 {
+      margin: 20px 0; /* Adjusted margins for smaller screens */
+    }
+  
+    button.normal {
+      font-size: 12px; /* Reduced font size for smaller screens */
+      padding: 12px 24px; /* Adjusted padding for smaller screens */
+    }
+  
+    button.white {
+      font-size: 11px; /* Reduced font size for smaller screens */
+      padding: 8px 14px; /* Adjusted padding for smaller screens */
+    }
+  
+    .featured {
+      margin-top: 20px; /* Reduced margin for smaller screens */
+      margin-bottom: 20px; /* Reduced margin for smaller screens */
+    }
+  }
+  

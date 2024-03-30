@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>365FOREVER | Explore more products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link rel="stylesheet" href="styles/pages/amazon.css">
+
+  </head>
+
+  <style>
+    .amazon-header-left-section a{
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      font-size: 30px;
+    }
+
+    .copyright{
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px solid rgb(197, 197, 197);
+    padding-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .copyright p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #767676;
+  }
+  </style>
+
+  
+  <body>
+    <div class="amazon-header">
+      
+      <div class="amazon-header-left-section">
+        <a href="front.html" class="header-link">
+          <!-- <img class="amazon-logo"
+            src="images/amazon-logo-white.png"> -->
+            365FOREVER
+          <!-- <img class="amazon-mobile-logo"
+            src="images/amazon-mobile-logo-white.png"> -->
+        </a>
+      </div>
+
+
+      <div class="amazon-header-middle-section" id="headerMiddleSection">
+        <input class="search-bar js-search-bar" id="searchBar" type="text" placeholder="Search">
+
+        <button class="search-button js-search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
+
+      <div class="amazon-header-right-section">
+        <a class="account-link header-link" href="login.html" target="_blank">
+          <span class="returns-text">Sign in</span>
+          <span class="orders-text">Accounts & Lists</span>
+        </a>
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <!-- <div class="cart-text">Cart</div> -->
+        </a>
+      </div>
+
+    </div>
+    
+    <div class="main">
+      <div class="products-grid js-product-grid" id="productsGrid">
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&#169; Developed by Aayush Mehta with the help of colleagues Aakash Gosain, Sunny Kumar and Sumit Lohani</p>
+  </div>
+
+    <script type="module" src="scripts/amazon.js"></script>
+  </body>
+</html>

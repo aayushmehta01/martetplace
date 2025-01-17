@@ -1,0 +1,1 @@
+While commit project I made the index.html as the landing page but instead front.html is the one. When you visit the live you will directly land on products page, just click on the company logo and you will be directed to the landing page. Will revise this mistake as soon as possible.

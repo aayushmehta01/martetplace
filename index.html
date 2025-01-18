@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>365FOREVER | Explore more products</title>
+    <title>365FOREVER | Shop online for Mobile, Books, Watches, Shoes and More.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="styles/shared/amazon-header.css">
     <link rel="stylesheet" href="styles/pages/amazon.css">
 
+    <link rel="stylesheet" href="styles/front/sm-banner.css">
+    <link rel="stylesheet" href="styles/front/banner.css">
+    <link rel="stylesheet" href="styles/front/footer.css">
+    <link rel="stylesheet" href="styles/front/newsletter.css">
+
+    <link rel="stylesheet" href="styles/front/hero.css">
+
   </head>
 
   <style>
@@ -27,31 +34,15 @@
       font-weight: 400;
       font-style: normal;
       color: white;
-      font-size: 30px;
+      font-size: 30px;;
     }
-
-    .copyright{
-    display: flex;
-    justify-content: center;
-
-    border-top: 1px solid rgb(197, 197, 197);
-    padding-top: 35px;
-    margin-bottom: 30px;
-  }
-
-  .copyright p{
-    font-size: 12px;
-    font-weight: 300;
-    color: #767676;
-  }
   </style>
 
-  
   <body>
     <div class="amazon-header">
       
       <div class="amazon-header-left-section">
-        <a href="front.html" class="header-link">
+        <a href="index.html" class="header-link">
           <!-- <img class="amazon-logo"
             src="images/amazon-logo-white.png"> -->
             365FOREVER
@@ -62,35 +53,174 @@
 
 
       <div class="amazon-header-middle-section" id="headerMiddleSection">
-        <input class="search-bar js-search-bar" id="searchBar" type="text" placeholder="Search">
+        <input class="search-bar hidden js-search-bar" id="searchBar" type="text" placeholder="Search">
 
-        <button class="search-button js-search-button">
+        <button class="search-button hidden js-search-button">
           <img class="search-icon" src="images/icons/search-icon.png">
         </button>
       </div>
 
       <div class="amazon-header-right-section">
         <a class="account-link header-link" href="login.html" target="_blank">
-          <span class="returns-text">Sign in</span>
+          <span class="returns-text">Hello, Sign in</span>
           <span class="orders-text">Accounts & Lists</span>
         </a>
         <a class="cart-link header-link" href="checkout.html">
           <img class="cart-icon" src="images/icons/cart-icon.png">
           <div class="cart-quantity js-cart-quantity">0</div>
-          <!-- <div class="cart-text">Cart</div> -->
+          <div class="cart-text">Cart</div>
         </a>
+
+        <div class="hamburger-container">
+          <a href="" class="hamburger-link hamburger-header">
+            <img src="images/icons/hamburger-menu.svg" class="hamburger-icon" alt="">
+          </a>
+        </div>
       </div>
 
     </div>
+
+    <div id="hero">
+      <h4>Trade-in-offer</h4>
+      <h2>Super value deals</h2>
+      <h1>On all products</h1>
+      <p>Save mode with coupons & up to 70% off!</p>
+      <a href="#featured"><button>Shop Now</button></a>
+    </div>
     
+    <div class="featured-products">
+      <div class="featured" id="featured">
+        <h1>Featured Products</h1>
+        <h3>Summer collection New Modern Design</h3>
+      </div>
+    </div>
+
     <div class="main">
       <div class="products-grid js-product-grid" id="productsGrid">
       </div>
     </div>
 
-    <div class="copyright">
-      <p>&#169; Developed by Aayush Mehta with the help of colleagues Aakash Gosain, Sunny Kumar and Sumit Lohani</p>
-  </div>
+
+    <div id="banner" class="section-m1">
+      <h2>Up to <span>70% Off</span> - All t-Shirts & Accessories</h2>
+      <a href="index.html"><button class="normal">Explore More</button></a>
+    </div>
+
+    <div id="sm-banner" class="section-p1">
+      <div class="banner-box banner-box1">
+          <h2>buy 1 get 1 free</h2>
+          <span>The best classic dress is on sale at 365FOREVER</span>
+          <button class="white">Learn More</button>
+      </div>
+      <div class="banner-box banner-box2">
+          <h4>SPRING/SUMMER</h4>
+          <h2>upcomming season</h2>
+          <span>The best classic dress is on sale at 365FOREVER</span>
+          <button class="white">Collection</button>
+      </div>
+    </div>
+
+    <div id="banner3">
+        <div class="banner-box">
+            <h2>SEASONAL SALE</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>NEW FOOTWEAR COLLECTION</h2>
+            <h3>Spring/Summer - 2023</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>T-SHIRTS</h2>
+            <h3>New Loundry Prices</h3>
+        </div>
+    </div>
+
+
+    <div id="newsletter" class="section-p1">
+      <div class="newstext">
+          <h4>BE A PART, ENJOY OUR SERVICES.</h4>
+      </div>
+      <div>
+        <p>Get E-mail updates about our latest shop and <span class="spoffers">special offers. </span><a href="login.html" target="_blank"><span class="signup">Sign Up </span></a></p>
+      </div>
+    </div>
+
+    <footer class="section-p1">
+      <div class="col">
+        <div class="amazon-header-left-section">
+          <a href="front.html" class="header-link" style="color: black; margin-left: -10px;">
+              365FOREVER
+          </a>
+        </div>
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> Sec 1, Ambala City</p>
+          <p><strong>Phone:</strong> +91 99999 99999</p>
+          <div class="follow">
+              <h4>Follow Us</h4>
+              <div class="icon">
+                  <img class="footer-icon" src="images/icons/facebook.png">
+                  <img class="footer-icon" src="images/icons/twitter.png">
+                  <img class="footer-icon" src="images/icons/instagram.png">
+                  <img class="footer-icon" src="images/icons/youtube.png">
+                  <img class="footer-icon" src="images/icons/x.png">
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+      </div>
+      <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+              <img src="images/pay/app.jpg" alt="">
+              <img src="images/pay/play.jpg" alt="">
+          </div>
+          <p>Secure Payment Gateways</p>
+          <img src="images/pay/pay.png">
+      </div>
+      <div class="copyright">
+          <p>&#169; Developed by Aayush Mehta with the help of colleagues Aakash Gosain, Sunny Kumar and Sumit Lohani</p>
+      </div>
+    </footer>
+
+    <script>
+      // Function to handle the scroll event and toggle visibility
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const searchBar = document.querySelector('.js-search-bar');
+        const searchButton = document.querySelector('.js-search-button');
+
+        if (searchBar) {
+          if (scrollPosition > 660 & scrollPosition < 4000) {
+            searchBar.classList.remove("hidden");
+            searchButton.classList.remove("hidden");
+          } else {
+            searchBar.classList.add("hidden");
+            searchButton.classList.add("hidden");
+          }
+        } else {
+          console.error("Element with class '.search-bar-hidden' not found");
+        }
+      };
+
+      // Add scroll event listener
+      window.addEventListener("scroll", handleScroll);
+
+    </script>
 
     <script type="module" src="scripts/amazon.js"></script>
   </body>
